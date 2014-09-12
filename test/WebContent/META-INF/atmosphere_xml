@@ -1,0 +1,10 @@
+<atmosphere-handlers>
+    <!-- AtmosphereHandler -->
+    <atmosphere-handler support-session="true"
+                        context-root="/chat/pubsub/*"
+                        broadcaster="org.atmosphere.cpr.DefaultBroadcaster"
+                        class-name="org.atmosphere.samples.pubsub.AtmosphereHandlerPubSub">
+    </atmosphere-handler>
+</atmosphere-handlers>
+
+        

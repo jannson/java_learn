@@ -1,0 +1,87 @@
+九月 04, 2014 11:35:19 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/share/apache-tomcat-7.0.55/lib:/usr/local/lib:/usr/share/apache-tomcat-7.0.55/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+九月 04, 2014 11:35:19 上午 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:test' did not find a matching property.
+九月 04, 2014 11:35:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 04, 2014 11:35:19 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 04, 2014 11:35:19 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 385 ms
+九月 04, 2014 11:35:19 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 04, 2014 11:35:19 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+九月 04, 2014 11:35:20 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing AtmosphereFramework
+11:35:20.181 [localhost-startStop-1] WARN  org.atmosphere.util.IOUtils - META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+11:35:20.196 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+11:35:20.196 [localhost-startStop-1] INFO  o.a.cpr.DefaultAnnotationProcessor - AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$ServletContainerInitializerAnnotationProcessor being used
+11:35:20.197 [localhost-startStop-1] INFO  org.atmosphere.cpr.AnnotationHandler - Found Annotation in class org.atmosphere.samples.chat.ChatRoom being scanned: interface org.atmosphere.config.service.ManagedService
+11:35:20.319 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler mapped to context-path /chat/{room: [a-zA-Z][a-zA-Z_0-9]*} and Broadcaster Class org.atmosphere.cpr.DefaultBroadcaster
+11:35:20.319 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor [@ManagedService Interceptor, Atmosphere LifeCycle,  Track Message Size Interceptor using |, UUID Tracking Interceptor] mapped to AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler
+11:35:20.322 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Auto detecting WebSocketHandler in /WEB-INF/classes/
+11:35:20.326 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+11:35:20.330 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptor
+11:35:20.331 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+11:35:20.331 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+11:35:20.331 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+11:35:20.331 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+11:35:20.331 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+11:35:20.332 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+11:35:20.332 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+11:35:20.332 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+11:35:20.333 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+11:35:20.333 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+11:35:20.333 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+11:35:20.333 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+11:35:20.336 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+11:35:20.336 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+11:35:20.336 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+11:35:20.336 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+11:35:20.336 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging Thread Pool Size: Unlimited
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: false
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+11:35:20.337 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.Tomcat7Servlet30SupportWithWebSocket running under container: Apache Tomcat/7.0.55 using javax.servlet/3.0
+11:35:20.338 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 2.3.0 started.
+11:35:20.338 [localhost-startStop-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 
+
+	For Atmosphere Framework Commercial Support, visit 
+	http://www.async-io.org/ or send an email to support@async-io.org
+
+九月 04, 2014 11:35:20 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+九月 04, 2014 11:35:20 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 04, 2014 11:35:20 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 950 ms
+11:35:20.785 [Thread-1] INFO  o.atmosphere.cpr.AtmosphereFramework - Latest version of Atmosphere's JavaScript Client 2.2.3
+11:35:20.785 [Thread-1] INFO  o.atmosphere.cpr.AtmosphereFramework - 
+
+	Current version of Atmosphere 2.3.0 
+	Newest version of Atmosphere available 2.2.0
+
+
+11:36:08.374 [http-bio-8080-exec-6] DEBUG o.a.c.m.ManagedServiceInterceptor - Path: /chat/hello, targetPath: /chat/{room: [a-zA-Z][a-zA-Z_0-9]*}
+11:36:08.374 [http-bio-8080-exec-6] DEBUG o.a.c.m.ManagedServiceInterceptor - Putting PathVar pair: room: [a-zA-Z][a-zA-Z_0-9]* -> hello
+11:36:08.374 [http-bio-8080-exec-6] DEBUG o.a.c.m.ManagedServiceInterceptor - Annotating field room
+11:36:08.375 [http-bio-8080-exec-6] DEBUG o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler mapped to context-path /chat/hello and Broadcaster Class org.atmosphere.cpr.DefaultBroadcaster
+11:36:08.375 [http-bio-8080-exec-6] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor [@ManagedService Interceptor, Atmosphere LifeCycle] mapped to AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler
+11:36:08.379 [http-bio-8080-exec-6] INFO  org.atmosphere.samples.chat.ChatRoom - Browser 43b4c6f6-accf-4be0-9921-cf2f409c8520 connected.
+11:38:39.728 [http-bio-8080-exec-6] INFO  org.atmosphere.samples.chat.ChatRoom - Browser 43b4c6f6-accf-4be0-9921-cf2f409c8520 unexpectedly disconnected
+11:38:43.316 [http-bio-8080-exec-2] DEBUG o.a.c.m.ManagedServiceInterceptor - Path: /chat/romtest, targetPath: /chat/{room: [a-zA-Z][a-zA-Z_0-9]*}
+11:38:43.317 [http-bio-8080-exec-2] DEBUG o.a.c.m.ManagedServiceInterceptor - Putting PathVar pair: room: [a-zA-Z][a-zA-Z_0-9]* -> romtest
+11:38:43.317 [http-bio-8080-exec-2] DEBUG o.a.c.m.ManagedServiceInterceptor - Annotating field room
+11:38:43.317 [http-bio-8080-exec-2] DEBUG o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler mapped to context-path /chat/romtest and Broadcaster Class org.atmosphere.cpr.DefaultBroadcaster
+11:38:43.317 [http-bio-8080-exec-2] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor [@ManagedService Interceptor, Atmosphere LifeCycle] mapped to AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler
+11:38:43.317 [http-bio-8080-exec-2] INFO  org.atmosphere.samples.chat.ChatRoom - Browser 476de2c3-7593-4924-86c1-0a540594ad40 connected.
+11:39:11.660 [http-bio-8080-exec-5] INFO  org.atmosphere.samples.chat.ChatRoom - Browser 911c8a8a-c702-41b1-83c3-51a6a284df7c connected.
+11:39:11.661 [Atmosphere-Shared-AsyncOp-5] INFO  org.atmosphere.samples.chat.ChatRoom -  just send 
+11:39:11.661 [Atmosphere-Shared-AsyncOp-6] INFO  org.atmosphere.samples.chat.ChatRoom -  just send 
+11:39:24.856 [Atmosphere-Shared-AsyncOp-9] INFO  org.atmosphere.samples.chat.ChatRoom - gan just send  sent you a private message: hello haha
+11:39:37.260 [Atmosphere-Shared-AsyncOp-11] INFO  org.atmosphere.samples.chat.ChatRoom - all just send  sent a message to all chatroom: ok ok ok
